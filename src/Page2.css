@@ -1,0 +1,60 @@
+.image-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.image-container > ul {
+    text-decoration: none;
+}
+
+.smaller-image {
+    width: 200px;
+    height: auto;
+}
+
+.smaller-image2 {
+    width: 200px;
+    height: auto;
+}
+.smaller-image3 {
+    width: 200px;
+    height: auto;
+}
+/* App.css */
+
+/* Style for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Change the background color or image */
+    /* background-image: url('path_to_your_image.jpg'); */ /* Example: Using an image */
+    /* background-size: cover; */ /* Adjust image size */
+    /* background-repeat: no-repeat; */ /* Ensure the image doesn't repeat */
+  }
+  
+  /* Style for the app container */
+  .app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Other styles for your app container */
+  }
+  /* GridComponent.css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, adjust as needed */
+    gap: 10px; /* Gap between grid items */
+    padding: 20px; /* Padding for the container */
+    /* Additional styling for the grid container */
+  }
+  
+  .grid-item {
+    background-color: #ddd; /* Example background color */
+    padding: 20px;
+    text-align: center;
+    /* Additional styling for grid items */
+  }
+  
+  
