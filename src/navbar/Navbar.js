@@ -9,10 +9,10 @@ function Navbar(props) {
     return (
         <div id="Navbar">
             <a href="https://sps.edu" className="nav-button" id="SPS">SPS</a>
-            <a onClick={e => scrollToPage(0)} className="nav-button">TEAM 1512</a>
-            <a onClick={e => scrollToPage(1)} className="nav-button">MEMBERS</a>
-            <a onClick={e => scrollToPage(2)} className="nav-button">MEDIA</a>
-            <a onClick={e => scrollToPage(3)} className="nav-button">CONTACT US</a>
+            <a href="#" onClick={e => scrollToPage(0)} className="nav-button">TEAM 1512</a>
+            <a href="#" onClick={e => scrollToPage(1)} className="nav-button">MEMBERS</a>
+            <a href="#" onClick={e => scrollToPage(2)} className="nav-button">MEDIA</a>
+            <a href="#" onClick={e => scrollToPage(3)} className="nav-button">CONTACT US</a>
         </div>
     );
 }

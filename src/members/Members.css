@@ -1,0 +1,37 @@
+.members-list-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.members-list-container > ul {
+    text-decoration: none;
+}
+
+.members-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #f44040;
+    color: #000000;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+}
+
+.members-card .description {
+    font-size: 12px;
+    text-align: justify-all;
+    margin: 10px;
+    max-width: 90%;
+    height: 300px;
+
+    word-break: break-word;
+    white-space: normal;
+}
+
+.members-image {
+    width: 200px;
+    height: auto;
+}

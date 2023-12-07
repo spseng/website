@@ -1,10 +1,8 @@
 import './App.css';
 import Home from './home/Home'
-import Members from './members/Members'
-import Page2 from './Page2';
 import {Component, createRef, useEffect, useState} from "react";
-import TitleImage from './Pictures/TitlePageImage.jpg';
 import Navbar from "./navbar/Navbar";
+import MembersPage from "./members/MembersPage";
 
 
 class App extends Component {
@@ -29,9 +27,8 @@ class App extends Component {
                     <ul id={"Pages"} ref={this.pageRef}>
                         <li>
                             <div className="Page" style={{background: "#BC3939"}}>
-                                {/* Original resolution: 1800 x 1013 */}
-                                
-                                <img src={TitleImage} className='smaller-image' alt='TitleImage'/>
+
+                                <img src={"/images/CoverImage.jpg"} className='smaller-image' alt='TitleImage'/>
                                 {/* <img src={TitleImage} width="1800" height="1013" /> */}
 
                                 <h1>Welcome to Team 1512</h1>
@@ -41,7 +38,7 @@ class App extends Component {
                         </li>
                         <li>
                             <div className="Page" style={{background: "#BC3939"}}>
-                                <Page2 />
+                                <MembersPage />
                             </div>
                         </li>
                         <li>
@@ -49,7 +46,7 @@ class App extends Component {
                                 <div style={{paddingTop: 20}}>
                                     <h1>2023 Season</h1>
                                     <br/>
-                                    
+
                                 </div>
                             </div>
                         </li>

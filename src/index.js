@@ -19,7 +19,8 @@ export default function Website() {
             <div className={"app"}>
                 <Routes>
                     <Route path="/:page" element={<App />} />
-                    <Route path="/*" element={<App />} />
+                    <Route path="/" element={<App />} />
+                    <Route path="/website" element={<App />} />
                 </Routes>
             </div>
         </Router>
