@@ -9,7 +9,7 @@ body {
 
 .App {
   overflow: auto;
-  scroll-direction: horizontal;
+  scroll-margin: horizontal;
   scroll-behavior: smooth;
   text-align: center;
   width: 100vw;
@@ -28,18 +28,19 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .App > ul > li{
   color: #fff;
   border-radius: 4px;
   white-space: nowrap;
-  margin: 0;
+
 }
 
 .Page {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: max-content;
   align-content: center;
   justify-content: center;
   align-items: center;
+
 }

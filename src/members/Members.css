@@ -1,14 +1,20 @@
 .members-list-container {
     text-align: center;
     justify-content: center;
-}
 
-.members-list-container > ul {
-    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 50%;
+    min-width: 500px;
+    margin: auto;
 }
 
 .members-card {
-    display: inline-block;
+    display: inline;
+    height: fit-content;
+    grid-auto-rows: 100px;
+  
     margin: 10px;
     padding: 10px;
     border: 1px solid #000000;
@@ -17,7 +23,6 @@
     color: #000000;
     text-align: center;
     width: 200px;
-    height: 300px;
 }
 
 .members-card .description {
@@ -25,7 +30,6 @@
     text-align: justify-all;
     margin: 10px;
     max-width: 90%;
-    height: 300px;
 
     word-break: break-word;
     white-space: normal;
@@ -34,4 +38,13 @@
 .members-image {
     width: 200px;
     height: auto;
+}
+
+
+.students-table {
+    margin: auto;
+    width: 50%;
+    min-width: 500px;
+    text-align: center;
+    padding-bottom: 50px;
 }

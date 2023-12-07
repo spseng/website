@@ -3,6 +3,7 @@ import Home from './home/Home'
 import {Component, createRef, useEffect, useState} from "react";
 import Navbar from "./navbar/Navbar";
 import MembersPage from "./members/MembersPage";
+import React from "react";
 
 
 class App extends Component {
@@ -28,9 +29,10 @@ class App extends Component {
                         <li>
                             <div className="Page" style={{background: "#BC3939"}}>
 
-                                <img src={"/images/CoverImage.jpg"} className='smaller-image' alt='TitleImage'/>
-                                {/* <img src={TitleImage} width="1800" height="1013" /> */}
 
+                                <img src={"images/.jpg"}/>
+                                {/* <img src={TitleImage} width="1800" height="1013" /> */}
+                                /website/public
                                 <h1>Welcome to Team 1512</h1>
                                 <p>Test paragraph 1</p>
                                 <p>Test paragraph 2</p>
@@ -46,7 +48,12 @@ class App extends Component {
                                 <div style={{paddingTop: 20}}>
                                     <h1>2023 Season</h1>
                                     <br/>
-
+                                    <img src="images/2023Season2.jpg" width={"100%"}/>
+                                    <br/>
+                                    <img src="images/2023Season3.jpg" width={"70%"}/>
+                                    <br/>
+                                    <img src="images/2023Season1.jpg" width={"70%"}/>
+                                    <br/>
                                 </div>
                             </div>
                         </li>
@@ -68,10 +75,9 @@ class App extends Component {
                         </li>
                     </ul>
                 </div>
-            </>
+                </>
         );
     }
 }
-
 
 export default App;
