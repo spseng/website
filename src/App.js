@@ -4,80 +4,49 @@ import {Component, createRef, useEffect, useState} from "react";
 import Navbar from "./navbar/Navbar";
 import MembersPage from "./members/MembersPage";
 import React from "react";
+import HomePage from "./home/Home";
+import Season2023Page from "./season-2023/Season2023Page";
+import ContactUsPage from "./contact/ContactUsPage";
 
 
-class App extends Component {
-    constructor(props) {
-        super(props);
-        this.pageRef = createRef();
+const App = () => {
+    const [activeView, setActiveView] = useState(0);
+
+    const handleNavigation = (view) => {
+        scrollToId(view);
+        // setActiveView(view);
+    };
+
+    const scrollToId = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({behavior: "smooth"});
+        }
     }
 
-    smoothScroll = (n) => {
-        this.pageRef.current.scroll({left: n * window.outerWidth, behavior: "smooth"})
-    }
+    // return (
+    //     <>
+    //         <Navbar scrollToPage={handleNavigation}/>
+    //         {activeView === 0 && <Home />}
+    //         {activeView === 1 && <MembersPage />}
+    //         {activeView === 2 && <Season2023Page />}
+    //         {activeView === 3 && <ContactUsPage />}
+    //     </>
+    // );
 
-    scrollToPage(n) {
-        this.smoothScroll(n);
-    }
-
-    render() {
-        return (
-            <>
-                <Navbar/>
-                <div className="App">
-                    <ul id={"Pages"} ref={this.pageRef}>
-                        <li>
-                            <div className="Page" style={{background: "#BC3939"}}>
-
-
-                                <img src={"images/.jpg"}/>
-                                {/* <img src={TitleImage} width="1800" height="1013" /> */}
-                                /website/public
-                                <h1>Welcome to Team 1512</h1>
-                                <p>Test paragraph 1</p>
-                                <p>Test paragraph 2</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="Page" style={{background: "#BC3939"}}>
-                                <MembersPage />
-                            </div>
-                        </li>
-                        <li>
-                            <div className="Page" style={{background: "#BC3939"}}>
-                                <div style={{paddingTop: 20}}>
-                                    <h1>2023 Season</h1>
-                                    <br/>
-                                    <img src="images/2023Season2.jpg" width={"100%"}/>
-                                    <br/>
-                                    <img src="images/2023Season3.jpg" width={"70%"}/>
-                                    <br/>
-                                    <img src="images/2023Season1.jpg" width={"70%"}/>
-                                    <br/>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-
-                            <div className="Page" style={{background: "#BC3939"}}>
-                                <div style={{paddingTop: 40}}>
-                                    <h1>Address</h1>
-                                    St. Paul's School, 325 Pleasant Street, Concord NH 03301
-                                    <br/>
-                                    <h1>Email Us</h1>
-                                    Mr. Renauld's Email: wrenauld@sps.edu
-                                    <br/>
-                                    Dr. Justinvil's Email: ljustinvil@sps.edu
-                                    <br/>
-                                    Mr. Lalancette's Email: slalancette@sps.edu
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    return (
+        <>
+            <Navbar scrollToPage={handleNavigation}/>
+            <div className={"cover-image-background"}>
+                <div className={"cover-image-foreground"}>
+                    <Home />
+                    <MembersPage />
+                    <Season2023Page />
+                    <ContactUsPage />
                 </div>
-                </>
-        );
-    }
+            </div>
+        </>
+    );
 }
 
 export default App;

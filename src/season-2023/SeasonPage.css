@@ -1,0 +1,11 @@
+.season-image-container {
+    width: 70%;
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.season-image {
+    margin: auto;
+    max-width: 100%;
+}

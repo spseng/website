@@ -5,16 +5,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    width: 50%;
+    width: 60%;
     min-width: 500px;
     margin: auto;
+
+    height: max-content;
 }
 
 .members-card {
-    display: inline;
-    height: fit-content;
+    display: block;
     grid-auto-rows: 100px;
-  
+
     margin: 10px;
     padding: 10px;
     border: 1px solid #000000;
@@ -22,11 +23,10 @@
     background-color: #f44040;
     color: #000000;
     text-align: center;
-    width: 200px;
 }
 
 .members-card .description {
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify-all;
     margin: 10px;
     max-width: 90%;
@@ -44,7 +44,44 @@
 .students-table {
     margin: auto;
     width: 50%;
-    min-width: 500px;
+    min-width: 700px;
     text-align: center;
     padding-bottom: 50px;
+}
+
+.students-table th {
+    font-weight: 100;
+    letter-spacing: 0.05rem;
+    font-size: 22px;
+    text-decoration-line: underline;
+}
+
+.students-table .tooltip-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.students-table .tooltip-hover-message {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 10;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width value */
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip-hover:hover .tooltip-hover-message {
+    visibility: visible;
+    opacity: 1;
 }

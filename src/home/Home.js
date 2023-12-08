@@ -1,11 +1,14 @@
 import './Home.css';
+import React from "react";
 
-function Home() {
+function HomePage() {
     return (
-        <div className="App">
-            <h1>ROBOTICS</h1>
+        <div className="App" id={"team"}>
+            <h1>Welcome to Team 1512</h1>
+            <p>Test paragraph 1</p>
+            <p>Test paragraph 2</p>
         </div>
     );
 }
 
-export default Home;
+export default HomePage;

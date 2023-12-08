@@ -2,17 +2,17 @@ import './Navbar.css';
 
 function Navbar(props) {
 
-    const scrollToPage = (n) =>{
-        const pages = document.getElementById('Pages');
-        pages.scroll({ left:n*window.innerWidth, behavior: "smooth"})
+    function scrollToPage(page) {
+            props.scrollToPage(page);
     }
+
     return (
         <div id="Navbar">
             <a href="https://sps.edu" className="nav-button" id="SPS">SPS</a>
-            <a href="#" onClick={e => scrollToPage(0)} className="nav-button">TEAM 1512</a>
-            <a href="#" onClick={e => scrollToPage(1)} className="nav-button">MEMBERS</a>
-            <a href="#" onClick={e => scrollToPage(2)} className="nav-button">MEDIA</a>
-            <a href="#" onClick={e => scrollToPage(3)} className="nav-button">CONTACT US</a>
+            <button onClick={e => scrollToPage("team")} className="nav-button">TEAM 1512</button>
+            <button onClick={e => scrollToPage("members")} className="nav-button">MEMBERS</button>
+            <button onClick={e => scrollToPage("season")} className="nav-button">2023 SEASON</button>
+            <button onClick={e => scrollToPage("contact")} className="nav-button">CONTACT US</button>
         </div>
     );
 }
