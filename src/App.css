@@ -31,6 +31,13 @@ body {
     margin-top: 0;
     padding-top: 6%;
 }
+.App h3 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 6%;
+}
 
 .App p {
     text-align: center;

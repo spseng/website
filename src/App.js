@@ -7,6 +7,7 @@ import React from "react";
 import HomePage from "./home/Home";
 import Season2023Page from "./season-2023/Season2023Page";
 import ContactUsPage from "./contact/ContactUsPage";
+import UpcomingSeasonPage from "./upcoming/UpcomingSeasonPage";
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
                 <div className={"cover-image-foreground"}>
                     <Home />
                     <MembersPage />
+                    <UpcomingSeasonPage />
                     <Season2023Page />
                     <ContactUsPage />
                 </div>
