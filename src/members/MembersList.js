@@ -186,4 +186,12 @@ export const students = [
         "club":true,
         "class":true,
     },
+    {
+        "name":"Mikey",
+        "last":"W Jr.",
+        "form":"V",
+        "hometown":"Philadelphia, PA",
+        "club":true,
+        "class":false,
+    },
 ];
