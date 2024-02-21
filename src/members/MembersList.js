@@ -250,7 +250,7 @@ export const students = [
         "name":"Mabelle",
         "last":"C",
         "form":"IV",
-        "hometown":"Taipei (China)",
+        "hometown":"Taipei, Taiwan (China)",
         "club":true,
         "class":false,
     },

@@ -1,13 +1,6 @@
 
 export const upcomingEvents = [
     {
-        "name":"NH Week Zero",
-        "registration":"Registration not open yet",
-        "location": "Location to be determined",
-        "start":"2/16/2024",
-        "end":"2/17/2024",
-    },
-    {
         "name":"NE District Granite State Event",
         "registration":"Registration not open yet",
         "location": "Salem High School",
