@@ -102,7 +102,7 @@ export const students = [
         "name":"Xingguo",
         "last":"D",
         "form":"IV",
-        "hometown":"'Global Citizen'",
+        "hometown":"'Global Citizen', China",
         "club":true,
         "class":false,
     },
