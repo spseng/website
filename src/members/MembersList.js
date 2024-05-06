@@ -31,8 +31,6 @@ export const students = [
         "last":"B",
         "form":"VI",
         "hometown":"Brooklyn, NY",
-        "teamCaptain":true,
-        "driver":true,
         "club":true,
         "class":false,
     },
@@ -58,6 +56,7 @@ export const students = [
         "last":"R",
         "form":"V",
         "hometown":"Barcelona, Spain",
+        "teamCaptain": true,
         "club":true,
         "class":false,
     },{
@@ -268,6 +267,7 @@ export const students = [
         "form":"IV",
         "hometown":"Pelham, NY",
         "club":false,
+        "driver": true,
         "class":true,
     },
     {
@@ -277,5 +277,14 @@ export const students = [
         "hometown":"Hong Kong, HK (China)",
         "club":false,
         "class":true,
+    },
+    {
+        "name":"Linus",
+        "last":"K",
+        "form":"III",
+        "hometown":"Portland, ME",
+        "driver": true,
+        "club": true,
+        "class":false
     }
 ];
