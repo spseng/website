@@ -2,8 +2,10 @@ import React from "react";
 import "./SeasonPage.css";
 
 const Season2023Page = () => {
+    console.log('Season2023Page component rendered');
+
     return (
-        <div className={'App'} id={"season"}>
+        <div className={'App'}>
             <h1>Past Seasons</h1>
             <br/>
             <div className={"season-image-container"}>

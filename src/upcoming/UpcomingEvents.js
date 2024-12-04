@@ -8,7 +8,7 @@ export const upcomingEvents = [
         "end":"3/2/2024",
     },
     {
-        "name":"NE District UNH Event",
+        "name":"NE District UVM Event",
         "registration":"Registered",
         "location": "Whittemore Center Arena",
         "start":"3/28/2024",

@@ -1,57 +1,62 @@
+import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
-import Home from './home/Home'
-import {Component, createRef, useEffect, useState} from "react";
-import Navbar from "./navbar/Navbar";
-import MembersPage from "./members/MembersPage";
-import React from "react";
-import HomePage from "./home/Home";
-import Season2023Page from "./season-2023/Season2023Page";
-import Season2024Page from "./season-2024/Season2024Page";
-
-import ContactUsPage from "./contact/ContactUsPage";
-import UpcomingSeasonPage from "./upcoming/UpcomingSeasonPage";
-
-
+import Navbar from './navbar/Navbar';
+import Home from './home/Home';
+import MembersPage from './members/MembersPage';
+import Season2024Page from './season-2024/Season2024Page';
+import Season2023Page from './season-2023/Season2023Page';
+import ContactUsPage from './contact/ContactUsPage';
 const App = () => {
-    const [activeView, setActiveView] = useState(0);
+  const [currentPage, setCurrentPage] = useState('team');
 
-    const handleNavigation = (view) => {
-        scrollToId(view);
-        // setActiveView(view);
-    };
-
-    const scrollToId = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({behavior: "smooth"});
-        }
+  const getPageIndex = (view) => {
+    switch (view) {
+      case 'team':
+        return 0;
+      case 'members':
+        return 1;
+      case 'season2':
+        return 2;
+      case 'season':
+        return 3;
+      case 'contact':
+        return 4;
+      default:
+        return 0;
     }
+  };
 
-    // return (
-    //     <>
-    //         <Navbar scrollToPage={handleNavigation}/>
-    //         {activeView === 0 && <Home />}
-    //         {activeView === 1 && <MembersPage />}
-    //         {activeView === 2 && <Season2023Page />}
-    //         {activeView === 3 && <ContactUsPage />}
-    //     </>
-    // );
+  const pageIndex = getPageIndex(currentPage);
 
-    return (
-        <>
-            <Navbar scrollToPage={handleNavigation}/>
-            <div className={"cover-image-background"}>
-                <div className={"cover-image-foreground"}>
-                    <Home />
-                    <MembersPage />
-                    <UpcomingSeasonPage />
-                    <Season2024Page />
-                    <Season2023Page />
-                    <ContactUsPage />
-                </div>
-            </div>
-        </>
-    );
-}
+  const scrollToPage = (view) => {
+    setCurrentPage(view);
+  };
+
+  return (
+    <>
+      <Navbar scrollToPage={scrollToPage} />
+      <div
+        className="page-container"
+        style={{ transform: `translateX(-${pageIndex * 20   }%)` }}
+      >
+        <div className="page">
+          <Home />
+        </div>
+        <div className="page">
+          <MembersPage />
+        </div>
+        <div className="page">
+          <Season2024Page />
+        </div>
+        <div className="page">
+          <Season2023Page />
+        </div>
+        <div className="page">
+          <ContactUsPage />
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default App;

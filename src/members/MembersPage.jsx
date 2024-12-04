@@ -3,9 +3,10 @@ import React from "react";
 import {students, coaches} from "./MembersList"
 
 const MembersPage = () => {
+    console.log('MembersPage component rendered');
 
     return (
-        <div className={'App'} id={"members"}>
+        <div className={'App'}>
             <h1>Coaches</h1>
             <div className="members-list-container">
                 {coaches.map((coach) => {

@@ -3,7 +3,7 @@ import {upcomingEvents} from "./UpcomingEvents";
 
 const UpcomingSeasonPage = () => {
     return (
-        <div className={'App'} id={"upcoming"}>
+        <div className={'App'}>
             <h1>Upcoming Season</h1>
             {upcomingEvents.map((event) => {
                 return (
