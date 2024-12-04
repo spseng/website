@@ -1,17 +1,17 @@
 export const coaches = [
     {
-        "name":"Mr. Renuald",
-        "description":"Mr. Renauld is a seasoned veteran of First Robotics and has been helping teams compete for 18 years as a mentor. He is also an engineering teacher at St. Paul's School. He was also the founder of the FIRST robotics team “Ozram” while teaching at Hopkinton High School.",
+        "name":"Mr. Renauld",
+        "description":"Mr. Renauld is a seasoned veteran of FIRST Robotics and has helped teams compete for 18 years as a mentor. He is also an engineering teacher at St. Paul's School. Prior to St. Paul's, he founded the FIRST robotics team “Ozram” while teaching at Hopkinton High School.",
         "image":"images/members/Renauld.jpg",
     },
     {
         "name": "Dr. Justinvil",
-        "description": "While relatively new, Dr. Justinvil has became an integral member of the 1512 team. Dr. Justinvil was a STEAM-Scholar in-Residence at a day school, Palm Beach Day Academy, and is very involved with an NGO, HaitiFirst inc., to promote education, technology, and health access In Haiti.",
+        "description": "While relatively new, Dr. Justinvil has become an integral member of the 1512 team. Dr. Justinvil was a STEAM-Scholar in-Residence at day school Palm Beach Day Academy and is well involved with NGO HaitiFirst inc., to promote education, technology, and health access in Haiti.",
         "image": "images/members/Justinvil.jpg"
     },
     {
         "name": "Mr. Lalancette",
-        "description": "Mr. Lalancette is a new member of the team and is a math teacher at St. Paul's School. He has been helping the team with the programming of the robot and has been a great help to the team.",
+        "description": "Mr. Lalancette is a new member of the team and is a math teacher at St. Paul's School. He has helped the team with programming the robot and has been a great help to the team.",
         "image": "images/members/Lalancette.jpg",
     }
 ];
@@ -102,7 +102,7 @@ export const students = [
         "name": "Ella",
         "last": "Kim",
         "form": "VI",
-        "hometown": "Hong Kong, HK",
+        "hometown": "Hong Kong",
         "captainType": "Senior Captain",
         "club": true,
         "class": false,
@@ -184,5 +184,13 @@ export const students = [
         "captainType": "Junior Captain",
         "club": false,
         "class": true,
+    },
+        {
+        "name": "Tyler",
+        "last": "W",
+        "form": "VI",
+        "hometown": "San Marino, CA",
+        "club": true,
+        "class": false,
     },
 ];
