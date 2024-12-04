@@ -6,6 +6,8 @@ import MembersPage from './members/MembersPage';
 import Season2024Page from './season-2024/Season2024Page';
 import Season2023Page from './season-2023/Season2023Page';
 import ContactUsPage from './contact/ContactUsPage';
+import UpcomingSeasonPage from "./upcoming/UpcomingSeasonPage";
+
 const App = () => {
   const [currentPage, setCurrentPage] = useState('team');
 
@@ -41,6 +43,8 @@ const App = () => {
       >
         <div className="page">
           <Home />
+          <UpcomingSeasonPage/>
+          
         </div>
         <div className="page">
           <MembersPage />
