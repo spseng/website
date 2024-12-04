@@ -1,9 +1,29 @@
 import './Members.css';
 import React from "react";
-import {students, coaches} from "./MembersList"
+import { students, coaches } from "./MembersList";
 
 const MembersPage = () => {
     console.log('MembersPage component rendered');
+
+    // Map captain types to symbols and tooltips
+    const captainSymbols = {
+        "Senior Captain": {
+            symbol: "🎖️",
+            tooltip: "Senior Captain"
+        },
+        "Junior Captain": {
+            symbol: "🥈",
+            tooltip: "Junior Captain"
+        },
+        "Sophomore Captain": {
+            symbol: "🥉",
+            tooltip: "Sophomore Captain"
+        },
+        "King Krenkal Captain": {
+            symbol: "👑",
+            tooltip: "King Krenkal Captain"
+        }
+    };
 
     return (
         <div className={'App'}>
@@ -20,51 +40,55 @@ const MembersPage = () => {
                 })}
             </div>
 
-         <h1>Students</h1>
-         <table className='students-table'>
-            <tbody>
-                <tr>
-                    <th>Name</th>
-                    <th>Form</th>
-                    <th>Hometown</th>
-                    <th>Class</th>
-                    <th>Club</th>
-                </tr>
-            </tbody>
+            <h1>Students</h1>
+            <table className='students-table'>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Form</th>
+                        <th>Hometown</th>
+                        <th>Class</th>
+                        <th>Club</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                {students
-                    .sort((a, b) => (a.form.localeCompare(b.form)))
-                    .reverse()
-                    .sort((a, b) => {
-                    if (a.form === b.form) {
-                        return a.last.localeCompare(b.last);
-                    }else {
-                        return !(a.form.localeCompare(b.form));
-                    }
-                }).map((student) => {
-                    return (
-                        <tr>
-                            <td>
-                                {(student.teamCaptain ? <>
-                                    <div className='tooltip-hover' style={{paddingRight:3}}>
-                                        🎖️ <div className="tooltip-hover-message">Team Captain</div>
-                                    </div>
-                                </> : <span></span>)}
-                                {(student.driver ? <>
-                                    <div className='tooltip-hover' style={{paddingRight:3}}>
-                                        🎮 <div className="tooltip-hover-message">Team Driver</div>
-                                    </div>
-                                </> : <span></span>)}
-                                {student.name + " " + student.last}
-                            </td>
-                            <td>{student.form}</td>
-                            <td>{student.hometown}</td>
-                            <td>{student.class ? "✓" : ""}</td>
-                            <td>{student.club ? "✓" : ""}</td>
-                        </tr>
-                    );
-                })}
+                <tbody>
+                    {students
+                        .sort((a, b) => b.form.localeCompare(a.form))
+                        .sort((a, b) => {
+                            if (a.form === b.form) {
+                                return a.last.localeCompare(b.last);
+                            } else {
+                                return b.form.localeCompare(a.form);
+                            }
+                        })
+                        .map((student) => {
+                            return (
+                                <tr key={student.name + student.last}>
+                                    <td>
+                                        {student.captainType && (
+                                            <div className='tooltip-hover' style={{ paddingRight: 3, display: 'inline-block' }}>
+                                                {captainSymbols[student.captainType].symbol}
+                                                <div className="tooltip-hover-message">
+                                                    {captainSymbols[student.captainType].tooltip}
+                                                </div>
+                                            </div>
+                                        )}
+                                        {student.driver && (
+                                            <div className='tooltip-hover' style={{ paddingRight: 3, display: 'inline-block' }}>
+                                                🎮
+                                                <div className="tooltip-hover-message">Team Driver</div>
+                                            </div>
+                                        )}
+                                        {student.name + " " + student.last}
+                                    </td>
+                                    <td>{student.form}</td>
+                                    <td>{student.hometown}</td>
+                                    <td>{student.class ? "✓" : ""}</td>
+                                    <td>{student.club ? "✓" : ""}</td>
+                                </tr>
+                            );
+                        })}
                 </tbody>
             </table>
         </div>
