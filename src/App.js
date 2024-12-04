@@ -6,6 +6,8 @@ import MembersPage from "./members/MembersPage";
 import React from "react";
 import HomePage from "./home/Home";
 import Season2023Page from "./season-2023/Season2023Page";
+import Season2024Page from "./season-2024/Season2024Page";
+
 import ContactUsPage from "./contact/ContactUsPage";
 import UpcomingSeasonPage from "./upcoming/UpcomingSeasonPage";
 
@@ -43,6 +45,7 @@ const App = () => {
                     <Home />
                     <MembersPage />
                     <UpcomingSeasonPage />
+                    <Season2024Page />
                     <Season2023Page />
                     <ContactUsPage />
                 </div>

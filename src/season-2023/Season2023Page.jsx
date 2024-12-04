@@ -4,7 +4,7 @@ import "./SeasonPage.css";
 const Season2023Page = () => {
     return (
         <div className={'App'} id={"season"}>
-            <h1>2023 Season</h1>
+            <h1>Past Seasons</h1>
             <br/>
             <div className={"season-image-container"}>
                 <img className={"season-image"} src={"images/season-2023/eventImage1.jpg"} alt={"2023 Season 1"}/>
