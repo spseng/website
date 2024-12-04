@@ -33,11 +33,11 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="app-container">
       <Navbar scrollToPage={scrollToPage} />
       <div
         className="page-container"
-        style={{ transform: `translateX(-${pageIndex * 20   }%)` }}
+        style={{ transform: `translateX(-${pageIndex * 20}%)` }}
       >
         <div className="page">
           <Home />
@@ -55,8 +55,9 @@ const App = () => {
           <ContactUsPage />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default App;
+
