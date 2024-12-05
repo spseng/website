@@ -43,7 +43,6 @@ const App = () => {
       >
         <div className="page">
           <Home />
-          <UpcomingSeasonPage/>
           
         </div>
         <div className="page">
