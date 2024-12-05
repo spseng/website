@@ -28,6 +28,26 @@ function HomePage() {
                 <h2>Join Us</h2>
                 <p>We meet both as a class and an afternoon activity. If you're passionate about robotics, engineering, or teamwork, we'd love to have you!</p>
             </div>
+
+            <div className="instagram-follow">
+    <h2>Follow Us on Instagram!</h2>
+    <p>Stay updated with our journey and achievements by following us:</p>
+    <div className="instagram-row">
+        <a href="https://www.instagram.com/thebigredrobotics/" target="_blank" rel="noopener noreferrer">
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                alt="Instagram Logo" 
+                className="instagram-logo"
+            />
+        </a>
+        <a href="https://www.instagram.com/thebigredrobotics/" target="_blank" rel="noopener noreferrer">
+            <button className="instagram-button">Follow @thebigredrobotics</button>
+        </a>
+    </div>
+</div>
+
+            <div style={{ padding: "0.4%" }}>
+            </div>
         </div>
     );
 }

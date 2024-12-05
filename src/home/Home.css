@@ -92,22 +92,7 @@
   }
   
   /* Page Content Styles */
-  .App {
-    padding: 0;
-    min-width: 500px;
-    margin: auto;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .App h1 {
-    font-size: 58px;
-    color: white;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 6%;
-  }
+
   
   .App h2 {
     font-size: 36px;
@@ -115,12 +100,7 @@
     text-align: center;
     margin-top: 20px;
   }
-  
-  .App p {
-    text-align: center;
-    width: 100%;
-  }
-  
+
   .achievements, .events, .call-to-action {
     margin: 20px auto;
     text-align: center;
@@ -157,3 +137,52 @@
     align-items: center;
   }
   
+ /* Instagram Follow Section */
+.instagram-follow {
+  text-align: center;
+  margin: 30px auto;
+  color: white;
+}
+
+.instagram-follow h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.instagram-follow .instagram-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between the logo and button */
+  margin-top: 15px;
+}
+
+.instagram-follow img.instagram-logo {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.instagram-follow img.instagram-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Improved Instagram Button */
+.instagram-button {
+  background-color: #E4405F; /* Instagram's brand color */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px; /* Rounded edges */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.instagram-button:hover {
+  background-color: #D7354A; /* Slightly darker shade for hover effect */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
