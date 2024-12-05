@@ -171,7 +171,7 @@ export const students = [
         "form": "IV",
         "hometown": "Portland, ME",
         "driver": true,
-        "captainType": "King Krenkal Captain",
+        "captainType": "King Captain",
         "club": true,
         "class": false,
     },
