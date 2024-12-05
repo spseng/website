@@ -21,7 +21,7 @@ export const students = [
         "name": "Jack",
         "last": "Rubiralta Kunze",
         "form": "VI",
-        "hometown": "Barcelona, Spain",
+        "hometown": "Barcelona",
         "captainType": "Senior Captain",
         "club": true,
         "class": false,
@@ -168,7 +168,7 @@ export const students = [
     {
         "name": "Linus",
         "last": "K",
-        "form": "III",
+        "form": "IV",
         "hometown": "Portland, ME",
         "driver": true,
         "captainType": "King Krenkal Captain",
@@ -178,11 +178,20 @@ export const students = [
     {
         "name": "Lily",
         "last": "R",
-        "form": "IV",
+        "form": "V",
         "hometown": "Pelham, NY",
         "driver": true,
         "captainType": "Junior Captain",
         "club": false,
         "class": true,
     },
+    {
+        "name": "Tyler",
+        "last": "Wang",
+        "form": "VI",
+        "hometown": "San Marino, Ca",
+        "driver": true,
+        "club": true,
+        "class": false,
+    }
 ];
