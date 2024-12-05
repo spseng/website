@@ -19,7 +19,7 @@ export const coaches = [
 export const students = [
     {
         "name": "Jack",
-        "last": "Rubiralta Kunze",
+        "last": "Rubiralta",
         "form": "VI",
         "hometown": "Barcelona",
         "captainType": "Senior Captain",
@@ -167,7 +167,7 @@ export const students = [
     },
     {
         "name": "Linus",
-        "last": "K",
+        "last": "Krenkel",
         "form": "IV",
         "hometown": "Portland, ME",
         "driver": true,
@@ -177,7 +177,7 @@ export const students = [
     },
     {
         "name": "Lily",
-        "last": "R",
+        "last": "Ried",
         "form": "V",
         "hometown": "Pelham, NY",
         "driver": true,
