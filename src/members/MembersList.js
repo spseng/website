@@ -250,4 +250,12 @@ export const students = [
         "club": false,
         "class": true,
     },
+    {
+        "name": "Aarav",
+        "last": "Mehta",
+        "form": "IV",
+        "hometown": "Hopkinton, MA",
+        "club": true,
+        "class": false,
+    },
 ];
