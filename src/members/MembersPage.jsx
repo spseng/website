@@ -4,7 +4,7 @@ import { students, coaches } from "./MembersList";
 
 const MembersPage = () => {
     console.log('MembersPage component rendered');
-
+ 
     // Map captain types to symbols and tooltips
     const captainSymbols = {
         "Senior Captain": {
