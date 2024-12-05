@@ -146,7 +146,7 @@ export const students = [
         "form": "IV",
         "hometown": "Tokyo, Japan",
         "club": true,
-        "class": false,
+        "class": true,
     },
     {
         "name": "Clara",
