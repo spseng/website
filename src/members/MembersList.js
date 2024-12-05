@@ -190,7 +190,7 @@ export const students = [
         "last": "Wang",
         "form": "VI",
         "hometown": "San Marino, Ca",
-        "driver": true,
+        "driver": false,
         "club": true,
         "class": false,
     },
@@ -199,8 +199,10 @@ export const students = [
         "last": "Wu",
         "form": "VI",
         "hometown": "Toronto, Canada",
+        "captainType": "School President",
         "club": true,
         "class": false,
+
     },
     {
         "name": "Maddie",
