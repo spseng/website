@@ -42,6 +42,7 @@ const MembersPage = () => {
             </div>
 
             <h1>Students</h1>
+            <div className='student-list-container'>
             <table className='students-table'>
                 <thead>
                     <tr>
@@ -92,6 +93,7 @@ const MembersPage = () => {
                         })}
                 </tbody>
             </table>
+            </div>
         </div>
     )
 }

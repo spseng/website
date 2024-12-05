@@ -195,6 +195,14 @@ export const students = [
         "class": false,
     },
     {
+        "name": "Kevin",
+        "last": "Wu",
+        "form": "VI",
+        "hometown": "Toronto, Canada",
+        "club": true,
+        "class": false,
+    },
+    {
         "name": "Maddie",
         "last": "Morse",
         "form": "V",

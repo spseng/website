@@ -2,13 +2,24 @@
 .members-list-container {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
-    gap: 20px;
-    width: 85%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 30px; /* Increased spacing for better layout */
+    width: 90%;
     margin: auto;
-    padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.1); /* Subtle background overlay */
+    padding: 30px 30px;
+    background-color: rgba(0, 0, 0, 0.05); /* Softer background overlay */
     border-radius: 12px;
+}
+
+.student-list-container {
+    width: 70%; /* Makes sure the div spans a reasonable width */
+    max-width: 1200px; /* Limits the max width for better control */
+    margin: 0 auto; /* Centers the container vertically and horizontally */
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.05); /* Softer background overlay */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better emphasis */
 }
 
 /* Member Card */
@@ -17,61 +28,75 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
+    padding: 25px;
+    border: 2px solid #ffffff; /* Thicker border for better definition */
+    border-radius: 12px;
     background-color: #f44040;
     color: #ffffff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .members-card:hover {
     transform: translateY(-8px); /* Lift effect on hover */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow for hover */
 }
 
-.members-card h3 {
-    font-size: 22px;
-    margin: 12px 0;
-    text-align: center;
+.members-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures content starts at the top */
+    padding: 25px;
+    border: 2px solid #ffffff; 
+    border-radius: 12px;
+    background-color: #f44040;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .members-card p.description {
     font-size: 16px;
     width: 100%;
     text-align: justify;
-    line-height: 1.6;
-    margin: 15px 0 0;
-    color: #f5f5f5; /* Slightly lighter text for better readability */
+    line-height: 1.8;
+    margin-bottom: 20px; /* Instead of margin-top, use margin-bottom for spacing below */
+    padding: 10px;
+    color: #f8f8f8; 
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .members-image {
-    width: 100%; /* Full width of the card */
-    max-width: 200px; /* Limit the width for larger screens */
+    width: 100%;
+    max-width: 220px; 
     height: auto;
-    object-fit: cover; /* Maintain aspect ratio and crop if needed */
-    border-radius: 6px; /* Subtle rounding */
-    margin-bottom: 15px;
-    border: 2px solid #ffffff;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px; /* Adjusted to ensure proper spacing below the description */
+    border: 3px solid #ffffff;
 }
+
 
 /* Students Table */
 .students-table {
-    margin: 40px auto;
-    width: 90%;
-    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
     border-collapse: collapse;
     text-align: center;
     background-color: #121517;
     border-radius: 12px;
+
     overflow: hidden; /* Clip content that overflows the container */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for table */
+    border: 3px solid #f44040;
+
 }
 
 .students-table th,
 .students-table td {
-    padding: 15px;
+    padding: 20px;
     color: white;
     border: 1px solid #ffffff20; /* Transparent white border for cells */
 }
@@ -139,7 +164,7 @@
     }
 
     .members-card {
-        padding: 15px;
+        padding: 20px;
     }
 
     .members-card h3 {
@@ -148,5 +173,10 @@
 
     .members-card p.description {
         font-size: 14px;
+        padding: 8px;
+    }
+
+    .members-image {
+        max-width: 200px; /* Smaller images for mobile */
     }
 }
