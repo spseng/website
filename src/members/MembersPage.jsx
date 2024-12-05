@@ -21,7 +21,7 @@ const MembersPage = () => {
         },
         "King Captain": {
             symbol: "👑", // Maintains the royal theme for King Krenkal
-            tooltip: "King Krenkel Captain"
+            tooltip: "King Captain"
         }
     };
     
