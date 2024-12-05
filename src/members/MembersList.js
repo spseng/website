@@ -11,7 +11,7 @@ export const coaches = [
     },
     {
         "name": "Mr. Lalancette",
-        "description": "Mr. Lalancette is a new member of the team and is a math teacher at St. Paul's School. He has helped the team with programming the robot and has been a great help to the team.",
+        "description": "Mr. Lalancette is a skilled individual with extensive experience in mechanical engineering and robotics. As a part-time member of our team, he provides valuable insights and helps us tackle complex projects with his hands-on expertise.",
         "image": "images/members/Lalancette.jpg",
     }
 ];
