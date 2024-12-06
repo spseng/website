@@ -177,7 +177,7 @@ export const students = [
     },
     {
         "name": "Lily",
-        "last": "Ried",
+        "last": "ReId",
         "form": "V",
         "hometown": "Pelham, NY",
         "driver": true,
@@ -229,7 +229,7 @@ export const students = [
         "class": true,
     },
     {
-        "name": "Fin",
+        "name": "FiNn",
         "last": "Ryan",
         "form": "V",
         "hometown": "Chicago",
@@ -238,7 +238,7 @@ export const students = [
     },
     {
         "name": "Kyan",
-        "last": "Hans",
+        "last": "Hands",
         "form": "IV",
         "hometown": "Paget, Bermuda",
         "club": false,
