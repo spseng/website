@@ -8,7 +8,7 @@ const MembersPage = () => {
     // Map captain types to symbols and tooltips
     const captainSymbols = {
         "Senior Captain": {
-            symbol: "🥇", // Represents top leadership and achievement
+            symbol: "🤝", // Represents top leadership and achievement
             tooltip: "Senior Captain"
         },
         "Junior Captain": {
@@ -26,6 +26,10 @@ const MembersPage = () => {
         "School President": {
             symbol: "🐼", // Maintains the royal theme for King Krenkal
             tooltip: "School President"
+        },
+        "Class Captain": {
+            symbol: "📘", // Maintains the royal theme for King Krenkal
+            tooltip: "Class Captain"
         }
     };
     

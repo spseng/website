@@ -181,7 +181,7 @@ export const students = [
         "form": "V",
         "hometown": "Pelham, NY",
         "driver": true,
-        "captainType": "Junior Captain",
+        "captainType": "Class Captain",
         "club": false,
         "class": true,
     },
