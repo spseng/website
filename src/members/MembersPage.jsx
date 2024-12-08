@@ -7,9 +7,9 @@ const MembersPage = () => {
  
     // Map captain types to symbols and tooltips
     const captainSymbols = {
-        "Senior Captain": {
+        "Captain": {
             symbol: "🤝", // Represents top leadership and achievement
-            tooltip: "Senior Captain"
+            tooltip: "Captain"
         },
         "Junior Captain": {
             symbol: "⚡", // Symbolizes energy, potential, and action
