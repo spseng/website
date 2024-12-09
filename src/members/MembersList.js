@@ -153,7 +153,7 @@ export const students = [
         "last": "Tcherepnin",
         "form": "V",
         "hometown": "Duxbury, MA",
-        "captainType": "Junior Captain",
+        "captainType": "Captain",
         "club": true,
         "class": false,
     },
