@@ -8,7 +8,7 @@ function HomePage() {
         <div className="App">
             <div className="cover-image-background"></div>
             <h1>Welcome to Team 1512 - The Pelicans!</h1>
-            <p>We are the St. Paul's School First Robotics Team, also known as "The Big Red."</p>
+            <p>We are the St. Paul's School FIRST Robotics Team, also known as "The Big Red."</p>
             <p>Our mascot is the pelican, representing our team spirit and determination.</p>
 
             <div className="team-history">
@@ -18,7 +18,7 @@ function HomePage() {
 
             <div className="achievements">
                 <h2>Our Achievements</h2>
-                <p>Last year, we reached the UNH Finals and secured an impressive second place!</p>
+                <p>Last year, we reached the UNH District Finals and secured an impressive second place!</p>
             </div>
 
             <div className="events">
@@ -31,7 +31,7 @@ function HomePage() {
 
             <div className="call-to-action">
                 <h2>Join Us</h2>
-                <p>If you're passionate about robotics, engineering, or teamwork, we'd love to have you! We meet both as a class and an afternoon activity, offering hands-on opportunities to learn and grow.</p>
+                <p>If you're passionate about robotics, engineering, or teamwork, we'd love to have you! We meet both as a class and as an afternoon activity, offering hands-on opportunities to learn and grow.</p>
             </div>
 
             <div className="instagram-follow">
