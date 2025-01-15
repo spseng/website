@@ -50,15 +50,6 @@ function HomePage() {
                     </a>
                 </div>
             </div>
-
-            <div className="more-info">
-                <h2>Learn More</h2>
-                <p>For additional details about our team and activities, visit our official website:</p>
-                <a href="http://robotics.sps.edu/" target="_blank" rel="noopener noreferrer">
-                    <button className="website-button">Visit Our Website</button>
-                </a>
-            </div>
-
             <div style={{ padding: "0.4%" }}>
             </div>
         </div>
